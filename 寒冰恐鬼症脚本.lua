@@ -1,10 +1,3 @@
-local sound = Instance.new("Sound", workspace)
-sound.SoundId = "http://lequxiang.com.cn/view.php/d7c13a21549687b134ce485f5b4fe88a.mp3"
-sound.Volume = 1
-sound.Loaded:Wait()
-sound:Play()
-sound.Ended:Once(function() sound:Destroy() end)
-
 local WindUI = loadstring(game:HttpGet("https://raw.githubusercontent.com/Footagesus/WindUI/main/dist/main.lua"))()
 
 local StarterGui = game:GetService("StarterGui")
